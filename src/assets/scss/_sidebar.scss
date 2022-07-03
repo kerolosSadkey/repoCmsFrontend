@@ -1,10 +1,8 @@
-
-$sidebar-width-lg: 240px;
 .sidebar {
   width: $sidebar-width-lg;
   height: 100%;
   position: fixed;
-  right: 0;
+  left: 0;
   top: 0;
   -webkit-transition: width .1s ease, margin .1s ease-out;
   transition: width .1s ease, margin .1s ease-out;
@@ -27,7 +25,7 @@ $sidebar-width-lg: 240px;
     .sidebar-open & {
       border-bottom: 1px solid $border-color;;
     }
-
+  
     .sidebar-brand {
       opacity: 1;
       visibility: visible;
@@ -50,41 +48,41 @@ $sidebar-width-lg: 240px;
         transition: all .3s;
         position: relative;
       }
-
+      
       span + span {
         margin-top: 4px;
       }
-
+      
       &.active span:nth-child(1) {
         -webkit-animation: ease .6s top forwards;
                 animation: ease .6s top forwards;
       }
-
+      
       &.not-active span:nth-child(1) {
         -webkit-animation: ease .6s top-2 forwards;
                 animation: ease .6s top-2 forwards;
       }
-
+      
       &.active span:nth-child(2) {
         -webkit-animation: ease .6s scaled forwards;
                 animation: ease .6s scaled forwards;
       }
-
+      
       &.not-active span:nth-child(2) {
         -webkit-animation: ease .6s scaled-2 forwards;
                 animation: ease .6s scaled-2 forwards;
       }
-
+      
       &.active span:nth-child(3) {
         -webkit-animation: ease .6s bottom forwards;
                 animation: ease .6s bottom forwards;
       }
-
+      
       &.not-active span:nth-child(3) {
         -webkit-animation: ease .6s bottom-2 forwards;
                 animation: ease .6s bottom-2 forwards;
       }
-
+      
       @-webkit-keyframes top {
         0% {
           top: 0;
@@ -102,7 +100,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(45deg);
         }
       }
-
+      
       @keyframes top {
         0% {
           top: 0;
@@ -120,7 +118,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(45deg);
         }
       }
-
+      
       @-webkit-keyframes top-2 {
         0% {
           top: 6px;
@@ -138,7 +136,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(0deg);
         }
       }
-
+      
       @keyframes top-2 {
         0% {
           top: 6px;
@@ -156,7 +154,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(0deg);
         }
       }
-
+      
       @-webkit-keyframes bottom {
         0% {
           bottom: 0;
@@ -174,7 +172,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(135deg);
         }
       }
-
+      
       @keyframes bottom {
         0% {
           bottom: 0;
@@ -192,7 +190,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(135deg);
         }
       }
-
+      
       @-webkit-keyframes bottom-2 {
         0% {
           bottom: 6px;
@@ -210,7 +208,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(0);
         }
       }
-
+      
       @keyframes bottom-2 {
         0% {
           bottom: 6px;
@@ -228,7 +226,7 @@ $sidebar-width-lg: 240px;
                   transform: rotate(0);
         }
       }
-
+      
       @-webkit-keyframes scaled {
         50% {
           -webkit-transform: scale(0);
@@ -239,7 +237,7 @@ $sidebar-width-lg: 240px;
                   transform: scale(0);
         }
       }
-
+      
       @keyframes scaled {
         50% {
           -webkit-transform: scale(0);
@@ -250,7 +248,7 @@ $sidebar-width-lg: 240px;
                   transform: scale(0);
         }
       }
-
+      
       @-webkit-keyframes scaled-2 {
         0% {
           -webkit-transform: scale(0);
@@ -265,7 +263,7 @@ $sidebar-width-lg: 240px;
                   transform: scale(1);
         }
       }
-
+      
       @keyframes scaled-2 {
         0% {
           -webkit-transform: scale(0);
@@ -288,8 +286,8 @@ $sidebar-width-lg: 240px;
     border-right: 1px solid $border-color;
     height: 100%;
     -webkit-box-shadow: 0 8px 10px 0 rgba(183,192,206,.2);
-            box-shadow: 0 8px 10px 0 rgba(183,192,206,.2);
-    background: $card-bg;
+            box-shadow: 0 8px 10px 0 rgba(183,192,206,.2); 
+    background: $card-bg;   
     .sidebar-nav {
       list-style: none;
       padding: 25px 25px 50px 25px;
@@ -310,7 +308,7 @@ $sidebar-width-lg: 240px;
             color: inherit;
           }
           .link-title {
-            margin-right: 30px;
+            margin-left: 30px;
             font-size: 14px;
             -webkit-transition: all .2s ease-in-out;
             transition: all .2s ease-in-out;
@@ -318,14 +316,14 @@ $sidebar-width-lg: 240px;
           .link-arrow {
             width: 14px;
             height: 14px;
-            margin-right: auto;
+            margin-left: auto;
             -webkit-transition: all .3s ease;
             -webkit-transition: all .3s ease-in-out;
             transition: all .3s ease-in-out;
             color: inherit;
           }
           .badge {
-            margin-right: auto;
+            margin-left: auto;
           }
           .link-icon,
           .link-title,
@@ -350,7 +348,7 @@ $sidebar-width-lg: 240px;
           .nav-link {
             color: $primary;
             .link-title {
-              margin-right: 31px;
+              margin-left: 31px;
             }
             .link-icon {
               color: $primary;
@@ -371,7 +369,7 @@ $sidebar-width-lg: 240px;
               height: 26px;
               background: $primary;
               position: absolute;
-              right: -25px;
+              left: -25px;
             }
             .link-icon {
               fill: rgba(239, 243, 255, .5);
@@ -398,7 +396,7 @@ $sidebar-width-lg: 240px;
               background: transparent;
               border: 1px solid darken($border-color, 20%);
               position: absolute;
-              right: -29px;
+              left: -29px;
               top: 10px;
               -webkit-transition: all .7s ease-in-out;
               -webkit-transition: all .4s ease-in-out;
@@ -408,29 +406,29 @@ $sidebar-width-lg: 240px;
               color: $primary;
               &::before {
               border: 1px solid $primary;
-              background: $primary;
+              background: $primary;       
               }
             }
             .link-title {
-              margin-right: 0;
+              margin-left: 0;
             }
             &:hover {
               color: $primary;
-              margin-right: 3px;
+              margin-left: 3px;
               &::before {
                 border: 1px solid $primary;
-                background: $primary;
+                background: $primary;       
               }
             }
           }
           .sub-menu {
-            padding-right: 15px;
+            padding-left: 15px;
             .nav-item {
               .nav-link {
                 &::before {
                   width: 5px;
                   height: 5px;
-                  right: -24px;
+                  left: -24px;
                 }
               }
             }
@@ -441,10 +439,10 @@ $sidebar-width-lg: 240px;
   }
   @media(max-width: 991px) {
     z-index: 999;
-    margin-right: -#{$sidebar-width-lg};
+    margin-left: -#{$sidebar-width-lg};
     visibility: hidden;
     .sidebar-open & {
-      margin-right: 0;
+      margin-left: 0;
       visibility: visible;
     }
     .sidebar-header {
@@ -540,7 +538,7 @@ $sidebar-width-lg: 240px;
     padding: 18px;
     .settings-sidebar-toggler {
       position: absolute;
-      right: -44px;
+      left: -44px;
       top: 0;
       padding: 12px;
       border-radius: 4px 0 0 4px;
@@ -565,7 +563,7 @@ $sidebar-width-lg: 240px;
           content: '';
           position: absolute;
           top: 0;
-          right: 0;
+          left: 0;
           width: 100%;
           height: 100%;
           background: rgba($primary, 0);
@@ -591,4 +589,3 @@ $sidebar-width-lg: 240px;
     }
   }
 }
-

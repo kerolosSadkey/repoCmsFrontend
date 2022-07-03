@@ -43,6 +43,16 @@ export class SidebarComponent implements OnInit {
 
 
   ngOnInit(): void {
+    this.menuItems = MENU;
+
+    /**
+     * Sidebar-folded on desktop (min-width:992px and max-width: 1199px)
+     */
+    const desktopMedium = window.matchMedia('(min-width:992px) and (max-width: 1199px)');
+    desktopMedium.addEventListener('change', () => {
+      this.iconSidebar;
+    });
+    this.iconSidebar(desktopMedium);
   }
 
 

@@ -9,6 +9,7 @@ import { FooterComponent } from './footer/footer.component';
 import { BaseComponent } from './base/base.component';
 import { PerfectScrollbarConfigInterface, PerfectScrollbarModule } from 'ngx-perfect-scrollbar';
 import { PERFECT_SCROLLBAR_CONFIG } from 'ngx-perfect-scrollbar';
+
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
 };
@@ -23,7 +24,8 @@ const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   imports: [
     CommonModule,
     LayoutRoutingModule,
-    PerfectScrollbarModule
+    PerfectScrollbarModule,
+   
   ],
   providers: [
     {
